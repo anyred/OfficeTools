@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{6392d39c-f180-4f09-9e49-012c1728ba52}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\astreambuf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\asyncrt_utils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\base_uri.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\containerstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\basic_types.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\cpprest_compat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\fileio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\http_helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\http_server.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\http_server_api.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\nosal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\SafeInt3.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\details\web_utilities.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\filestream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\http_client.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\http_compression.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\http_headers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\http_listener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\http_msg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\interopstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\json.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\oauth1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\oauth2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\producerconsumerstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\rawptrstream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\streams.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\uri.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\uri_builder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\version.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\ws_client.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\ws_msg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxcancellation_token.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxconv.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxinterface.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxlinux.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxtasks.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxwin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\default_resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_appcore.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_appcore0.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_archive.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_commondlg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_controls.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_cstring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_ddx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_dialog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_dockframe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_docking.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_exception.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_file.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_filefind.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_folderdialog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_frame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_gdi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_imagelist.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_listview.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_mdi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_menu.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_menubar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_metafile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_preview.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_printdialogex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_printdialogs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_propertysheet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_rebar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_rect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_regkey.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_ribbon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_richedit.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_scrollview.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_shared_ptr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_statusbar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_stdcontrols.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_tab.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_taskdialog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_textconv.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_themes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_time.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_toolbar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_treeview.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_wceframe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_wcestddef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_webbrowser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_wincore.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_wincore0.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)win32xx\default_resource.rc" />
+  </ItemGroup>
+</Project>

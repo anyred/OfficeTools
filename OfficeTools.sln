@@ -11,7 +11,13 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OneNoteToolsInstall", "OneN
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OneDriveTools", "OneDriveTools\OneDriveTools.vcxproj", "{4A920C93-77CE-44EF-92CA-747F5E9C0567}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Share", "Share\Share.vcxitems", "{6392D39C-F180-4F09-9E49-012C1728BA52}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Share\Share.vcxitems*{080a853c-39ca-4759-9126-aaf293b5160a}*SharedItemsImports = 4
+		Share\Share.vcxitems*{6392d39c-f180-4f09-9e49-012c1728ba52}*SharedItemsImports = 9
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
