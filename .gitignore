@@ -10,3 +10,5 @@
 /.vs
 /x64/Debug
 /Secret
+/OneNoteTools/bin/Debug
+/OneNoteTools/obj
