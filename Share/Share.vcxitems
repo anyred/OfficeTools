@@ -14,6 +14,7 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\astreambuf.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\asyncrt_utils.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\cpprest\base_uri.h" />
@@ -53,7 +54,32 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxlinux.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxtasks.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cpprestsdk\include\pplx\pplxwin.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\default_resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\com.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\com_apartment_variable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\cppwinrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\cppwinrt_helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\cppwinrt_wrl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\filesystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\nt_result_macros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\registry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\result.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\result_macros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\result_originate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\rpc_helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\safecast.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\stl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\token_helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\Tracelogging.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\traceloggingconfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\win32_helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\winrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\wistd_config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\wistd_functional.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\wistd_memory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\wistd_type_traits.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wil\wrl.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_appcore.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_appcore0.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_archive.h" />
@@ -105,6 +131,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)win32xx\wxx_wincore0.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="$(MSBuildThisFileDirectory)win32xx\default_resource.rc" />
+    <None Include="$(MSBuildThisFileDirectory)OfficeTools.props" />
   </ItemGroup>
 </Project>

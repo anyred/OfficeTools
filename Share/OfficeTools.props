@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ShareRoot>$(SolutionDir)Share</ShareRoot>
+    <ShareBin>$(ShareRoot)\Bin\$(Configuration)\$(PlatformTarget)</ShareBin>
+    <ShareLib>$(ShareRoot)\Lib\$(Configuration)\$(PlatformTarget)</ShareLib>
+    <ShareStaticLib>$(ShareRoot)\Lib\$(Configuration)\$(PlatformTarget)_Static</ShareStaticLib>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="ShareRoot">
+      <Value>$(ShareRoot)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ShareBin">
+      <Value>$(ShareBin)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ShareLib">
+      <Value>$(ShareLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ShareStaticLib">
+      <Value>$(ShareStaticLib)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
