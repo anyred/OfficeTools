@@ -1,4 +1,5 @@
 #include "cpprestsdk.h"
+#include "scintilla/Scintilla.h"
 #include <atlstr.h>
 #ifdef _WIN32
 int wmain(int argc, wchar_t* args[])

@@ -135,7 +135,9 @@ move $(TargetPath) $(SolutionDir)Share\bin\module_debug\x86\$(TargetFileName)</C
     <PostBuildEvent>
       <Command>echo file $(TargetPath)
 echo move file $(SolutionDir)Share\bin\module_debug\$(TargetFileName)
-move $(TargetPath) $(SolutionDir)Share\bin\module_debug\$(TargetFileName)</Command>
+move $(TargetPath) $(SolutionDir)Share\bin\module_debug\$(TargetFileName)
+echo xcopy scintilla file
+xcopy $(ProjectDir)..\include\* $(SolutionDir)Share\scintilla /e /y /i /q</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
