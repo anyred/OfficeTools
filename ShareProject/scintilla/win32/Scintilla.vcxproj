@@ -139,6 +139,9 @@ move $(TargetPath) $(SolutionDir)Share\bin\module_debug\$(TargetFileName)
 echo xcopy scintilla file
 xcopy $(ProjectDir)..\include\* $(SolutionDir)Share\scintilla /e /y /i /q</Command>
     </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>

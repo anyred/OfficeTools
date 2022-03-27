@@ -1,0 +1,13 @@
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\bin\Debug\OfficeExcelToolEx.dll
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\bin\Debug\OfficeExcelToolEx.pdb
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\bin\Debug\OfficeExcelToolEx.dll.manifest
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\bin\Debug\OfficeExcelToolEx.vsto
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.csproj.AssemblyReference.cache
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.Properties.Resources.resources
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.csproj.GenerateResource.cache
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.csproj.CoreCompileInputs.cache
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.csproj.CopyComplete
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.dll
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.pdb
+C:\Users\Any\Bee\Project\Github\OfficeTools\OfficeExcelToolEx\obj\Debug\OfficeExcelToolEx.Ribbon.resources

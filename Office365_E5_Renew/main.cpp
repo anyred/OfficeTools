@@ -1,6 +1,8 @@
 #include "cpprestsdk.h"
 #include "scintilla/Scintilla.h"
 #include <atlstr.h>
+#include "wil/com.h"
+#include <roapi.h>
 #ifdef _WIN32
 int wmain(int argc, wchar_t* args[])
 #else

@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShareProject", "ShareProjec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scintilla", "ShareProject\scintilla\win32\Scintilla.vcxproj", "{19CCA8B8-46B9-4609-B7CE-198DA19F07BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeExcelToolEx", "OfficeExcelToolEx\OfficeExcelToolEx.csproj", "{318AC262-4BA0-47E4-B522-E2555C63B252}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Share\Share.vcxitems*{080a853c-39ca-4759-9126-aaf293b5160a}*SharedItemsImports = 4
@@ -129,6 +131,22 @@ Global
 		{19CCA8B8-46B9-4609-B7CE-198DA19F07BD}.Release|x64.Build.0 = Release|x64
 		{19CCA8B8-46B9-4609-B7CE-198DA19F07BD}.Release|x86.ActiveCfg = Release|Win32
 		{19CCA8B8-46B9-4609-B7CE-198DA19F07BD}.Release|x86.Build.0 = Release|Win32
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|x64.Build.0 = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Debug|x86.Build.0 = Debug|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|ARM64.Build.0 = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|x64.ActiveCfg = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|x64.Build.0 = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|x86.ActiveCfg = Release|Any CPU
+		{318AC262-4BA0-47E4-B522-E2555C63B252}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
