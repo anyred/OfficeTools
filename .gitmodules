@@ -1,3 +1,6 @@
 [submodule "deps/Office365APIEditor"]
 	path = deps/Office365APIEditor
 	url = https://github.com/Microsoft/Office365APIEditor.git
+[submodule "deps/NoteHighlight2016"]
+	path = deps/NoteHighlight2016
+	url = https://github.com/elvirbrk/NoteHighlight2016.git
