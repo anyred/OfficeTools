@@ -1,4 +1,5 @@
 #pragma once
+//item 信息供应商
 class ItemsInfoProvider
 {
 public:
@@ -6,13 +7,17 @@ public:
 	virtual ~ItemsInfoProvider();
 
 protected:
+	// COM 接口
 	IVsHierarchy* m_pHierarchy;
 
 private:
+
+	// 层次 
 	HRESULT CheckHierarchyPointer();
 
 protected:
 	
+	//
 	HRESULT SetHierarchyPointer(IVsHierarchy* pHierarchy);
 
 	HRESULT GetFirstChildItemId(VSITEMID itemId,  VSITEMID& childItemId, int visibleOnly);
