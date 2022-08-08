@@ -36,6 +36,7 @@ namespace OneNoteTools
 
         public void CopyTo(IStream pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten)
         {
+            return;
         }
 
         public void LockRegion(long libOffset, long cb, int dwLockType)
@@ -166,7 +167,7 @@ namespace OneNoteTools
             app.GetPageContent(id, out title);
             var doc = XDocument.Parse(title);
             string pageTitle = doc.Descendants().FirstOrDefault().Attribute("ID").NextAttribute.Value;
-            MessageBox.Show("Current Page ID = " + pageTitle, "Hello World!");
+            MessageBox.Show("Current Page ID = " + pageTitle, "Hello World! adddddd");
         }
 
         //public IStream GetImage(string imageName)
