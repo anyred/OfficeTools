@@ -3,12 +3,12 @@
 ################################################################################
 
 /.vs/OfficeTools/v16
-/Office365_E5_Renew/x64/Debug
-/OfficeExcelTools/obj/Debug
-/OfficeExcelTools/bin/Debug
+/Office365_E5_Renew/x64/*
+OfficeExcelTools/*
+OfficeExcelToolEx/*
 /OneNoteTools/.vscode
 /.vs
-/x64/Debug
+/x64/*
 /Secret
 /OneNoteTools/bin/Debug
 /OneNoteTools/obj
