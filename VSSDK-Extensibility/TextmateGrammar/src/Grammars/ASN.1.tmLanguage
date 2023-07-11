@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Abstract Syntax Notation</string>
+	<key>scopeName</key>
+	<string>source.asn</string>
+  <key>uuid</key>
+  <string>84E43652-15F7-4CCB-B115-32C34FB38B16</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>comment.line.asn</string>
+			<key>match</key>
+			<string>--.*$</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>storage.type.asn</string>
+			<key>match</key>
+			<string>::=</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>storage.type.asn</string>
+			<key>match</key>
+			<string>\|</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>keyword.operator.asn</string>
+			<key>match</key>
+			<string>\.\.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>storage.type.asn</string>
+			<key>match</key>
+			<string>(SEQUENCE|SET|CLASS|CHOICE|OF)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>variable.language.asn</string>
+			<key>match</key>
+			<string>(BOOLEAN|INTEGER|ENUMERATED|REAL|(BIT|OCTET) STRING|NULL|OBJECT IDENTIFIER|ANY|DATE|DATE-TIME|(Numeric|Printable|Teletex|IA5|Visible|Graphic|General)String|(Generalized|UTC)Time|EXTERNAL|Object Descriptor)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>constant.numeric.float.asn</string>
+			<key>match</key>
+			<string>([-+]?[0-9]+|[-+]?\.[0-9]+)(?=\)|\.\.)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>string.quoted.double.asn</string>
+			<key>begin</key>
+			<string>&quot;</string>
+			<key>end</key>
+			<string>&quot;</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>storage.modifier.asn</string>
+			<key>match</key>
+			<string>OPTIONAL|SIZE|\^ FROM</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>entity.name.type.class.asn</string>
+			<key>match</key>
+			<string>DEFINITIONS|AUTOMATIC TAGS|BEGIN|END</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>support.constant.asn</string>
+			<key>match</key>
+			<string>IMPORTS|FROM</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>constant.language.asn</string>
+			<key>match</key>
+			<string>(IM|EX)PLICIT</string>
+		</dict>
+	</array>
+	<key>fileTypes</key>
+	<array>
+		<string>asn</string>
+		<string>asn1</string>
+	</array>
+</dict>
+</plist>

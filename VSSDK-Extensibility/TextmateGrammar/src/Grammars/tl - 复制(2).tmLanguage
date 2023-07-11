@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>scopeName</key>
+    <string>source.tl</string>
+    <key>uuid</key>
+    <string>7AEFE495-726A-41EB-BC1D-19A968BA5AF3</string>
+    <key>fileTypes</key>
+    <array>
+        <string>tl</string>
+    </array>
+    <key>name</key>
+    <string>TL</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>begin</key>
+            <string>\/{2}</string>
+            <key>end</key>
+            <string>\n</string>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>include</key>
+                    <string>#comment-line-default</string>
+                </dict>
+            </array>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>^(\w+)</string>
+            <key>beginCaptures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>storage.modifier.tl</string>
+                </dict>
+            </dict>
+            <key>end</key>
+            <string>;</string>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>include</key>
+                    <string>#class-analysis</string>
+                </dict>
+            </array>
+        </dict>
+    </array>
+    <key>repository</key>
+    <dict>
+        <key>comment-line-default</key>
+        <dict>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>match</key>
+                    <string>(@\w+)(.*)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>2</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>([^@].*)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </array>
+        </dict>
+        <key>class-analysis</key>
+        <dict>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>match</key>
+                    <string>(#)(\w+\b)(.*)(=)(.*)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>6</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </array>
+        </dict>
+        <key>class-variable-analysis</key>
+        <dict>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>match</key>
+                    <string>(flags)(:)(#)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>(\w+)(:)(?!flags)(\w+)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>(\w+)(:)(\w+)(\.)([0-9])(\?)(?!Vector)(\w+)</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>2</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>4</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>5</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>6</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>7</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </array>
+        </dict>
+        
+    </dict>
+</dict>
+</plist>
+
+<!--
+(\w+)(:)(\w+)(\.)([0-9])(\?)(?!Vector)(\w+)              这个针对于以下情况  abc:flags.0?类名
+
+(\w+)(:)(\w+)(\.)([0-9])(\?)(\w+)([<])(\w+)([>])         这个针对以下情况    abc:flags.0?Vector<类名>
+(\w+)(:)(flags.)([0-9])(\?)(\w+)([<])(\w+)([>])          这个和上面的那个一样
+
+(\w+)(:)(?!flags)(\w+)                                   这个是普通情况     abc:def
+(flags)(:)(#)
+
+
+
+
+<dict>
+                    <key>match</key>
+                    <string>(\w+)(:)(flags.)([0-9])(\?)(\w+)([<])(\w+)([>])</string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>2</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>4</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>5</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                        <key>6</key>
+                        <dict>
+                            <key>name</key>
+                            <string>storage.modifier.tl</string>
+                        </dict>
+                        <key>7</key>
+                        <dict>
+                            <key>name</key>
+                            <string>comment.line.tl</string>
+                        </dict>
+                    </dict>
+                </dict>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+<!--
+匹配以下内容
+//@ssss aaa bbbb ccccc ddddd eeee fffff
+          <dict>
+                <key>match</key>
+                <string>(^\/{2})(@\w+)(.*)</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    
+                </dict>
+            </dict>
+-->
+
+
+
+<!--
+一些没用的东西
+
+           <dict>
+                <key>match</key>
+                <string>(\w+)(#\w+)</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(\s)(=)(\s)(\w+)</string>
+                <dict>
+                    <key>4</key>
+                    <string>comment.line.tl</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(\w+)(:)(\w+)</string>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                </dict>
+            </dict>
+
+
+-->

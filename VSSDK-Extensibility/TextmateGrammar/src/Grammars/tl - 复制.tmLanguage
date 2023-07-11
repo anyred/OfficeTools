@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>source.tl</string>
+        <key>uuid</key>
+        <string>7AEFE495-726A-41EB-BC1D-19A968BA5AF3</string>
+        <key>fileTypes</key>
+        <array>
+            <string>tl</string>
+        </array>
+        <key>name</key>
+        <string>TL</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>match</key>
+                <string>^\/{2}.*</string>
+                <key>name</key>
+                <string>comment.line.tl</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(\w+)(#\w+)</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(\s)(=)(\s)(\w+)</string>
+                <dict>
+                    <key>4</key>
+                    <string>comment.line.tl</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>(\w+)(:)(\w+)</string>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                </dict>
+            </dict>
+        </array>
+        <key>repository</key>
+        <dict>
+            <key>preprocess</key>
+        </dict>
+    </dict>
+</plist>
+
+
+<!--
+匹配以下内容
+//@ssss aaa bbbb ccccc ddddd eeee fffff
+          <dict>
+                <key>match</key>
+                <string>(^\/{2})(@\w+)(.*)</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.tl</string>
+                    </dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.tl</string>
+                    </dict>
+                </dict>
+            </dict>
+-->
